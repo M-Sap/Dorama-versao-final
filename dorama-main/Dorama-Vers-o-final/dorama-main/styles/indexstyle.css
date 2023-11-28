@@ -1,0 +1,367 @@
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    background-color: var(--Preto);
+    color: var(--Branco);
+}
+
+.sect1 {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 150vh;
+}
+
+.navbar {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(180deg, var(--Preto) -11.68%, rgba(13, 13, 13, 0) 182.71%);
+    opacity: 0.9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding: 0 7%;
+}
+
+.searchbar {
+    width: 40%;
+    height: 3.7rem;
+    border-radius: 3.1rem;
+    padding: 1rem 3.8rem;
+    background-color: rgba(101, 101, 101, 0.35);
+    color: var(--Branco);
+    outline: none;
+    border: none;
+}
+
+.searchbar::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+#login-button {
+    color: var(--Branco);
+    font-size: 1.3rem;
+}
+
+.header {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 30%;
+
+    background-image: url(../assets/Images/droama10.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -10rem;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+
+    /* border: 1px solid blue; */
+}
+
+    .recommendation-area {
+        width: 100%;
+        height: 100%;
+        color: var(--Branco);
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        /* border: 1px solid red */
+    }
+        .recommendation-text {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            width: 20rem;
+            /* border: 1px solid red; */
+            margin: 4% 8% -7%;
+        }
+        .videos-grid {
+            width: 100vw;
+            height: 65%;
+            /* border: 1px solid green; */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+            .lines {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                padding: 2rem;
+            }
+                .line {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 1rem;
+                }
+                    .card {
+                        width: 25%;
+                        height: 18rem;
+                        aspect-ratio: 16/9;
+                        border-radius: 2rem;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        align-items: center;
+                        text-align: center;
+                        padding: 1rem;
+
+                        pointer-events: none;
+                        overflow: hidden;
+                        
+                    }
+                    .card:active {
+                        transition: all 300ms;
+                        filter:brightness(0.8);
+                        color: white;
+                    }
+                        .dorama-name {
+                            font-size: 2.4rem;
+                            pointer-events: auto;
+                        }
+                        .dorama-name:active + .dorama-desc{
+                            display: block; 
+                        }
+                        .dorama-desc {
+                            font-size: 1.4rem;
+                            display: none;
+                        }
+                        .bar {
+                            width: 50%;
+                            height: .3rem;
+                            border-radius: 10rem;
+                            text-align: center;
+                            background-color: var(--Branco);
+                        }
+                        .bar:active {
+                            background-color: red;
+                        }
+
+#l1c1 {
+    background-image: url(../assets/Images/doama1.webp);
+    background-size: cover;
+    background-position: center;
+} 
+#l1c2 {
+    background-image: url(../assets/Images/dorama2.webp);
+    background-size: cover;
+    background-position: center;
+}
+#l1c3 {
+    background-image: url(../assets/Images/dorama3.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#l2c1 {
+    background-image: url(../assets/Images/e0555ac04ae46b60531d0f74a723839a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#l2c2 {
+    background-image: url(../assets/Images/dorama5.webp);
+    background-size: cover;
+    background-position: center;
+}
+#l2c3 {
+    background-image: url(../assets/Images/dorama6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#l3c1 {
+    background-image: url(../assets/Images/dorama7.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#l3c2 {
+    background-image: url(../assets/Images/dorama8.webp);
+    background-size: cover;
+    background-position: center;
+}
+#l3c3 {
+    background-image: url(../assets/Images/droama10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#l4c1 {
+    background-image: url(../assets/Images/minhavenus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#l4c2 {
+    background-image: url(../assets/Images/garotasec21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#l4c3 {
+    background-image: url(../assets/Images/well.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.sect2 {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    color: var(--Branco);
+}
+
+    .block {
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+            #signup {
+                font-size: 2rem;
+                width: 80%;
+                margin-bottom: 1rem;
+            }
+            .inputs {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .input {
+                    width: 20%;
+                    height: 3rem;
+                    padding: 1rem;
+                    color: var(--Branco);
+                    margin-right: 2rem;
+                    background-color: var(--CinzaEscuro);
+                    border: 2px solid var(--CinzaClaro);
+                    outline: none;
+                    border-radius: .6rem;
+                }
+                .btn {
+                    width: 20%;
+                    height: 3rem;
+                    padding: 1rem;
+                    color: var(--Branco);
+                    margin-right: 2rem;
+                    background-color: var(--Vermelho);
+                    border: none;
+                    outline: none;
+                    border-radius: .6rem;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+.sect3 {
+    width: 100%;
+    height: 10vh;
+    margin-top: 5rem;
+    
+    position: relative;
+    bottom: -20rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+    padding: 5rem;
+
+    background-color: var(--CinzaEscuro);
+}
+
+@media (max-width: 600px)
+{
+    .recommendation-text {
+        font-size: 1rem;
+        margin: 2rem 0 -30% 4rem;
+    }
+    .card {
+        height: 16rem;
+    }
+    .dorama-name {
+        font-size: 0.8rem;
+    }
+    .dorama-desc {
+        font-size: 0.6rem;
+    }
+    .header {
+        height: 25%;
+        background-position: center;
+     }
+    .logo  > img{
+        height: 1rem;
+    }
+    .searchbar {
+        height: 10%;
+        padding: 1rem;
+        font-size: .7rem;
+    }
+    #login-button {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .sect2 {
+        margin-top: -20rem;
+    }
+    #signup {
+        position: relative;
+        left: -1rem;
+    }
+    .inputs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .input, #btn {
+        width: 70%;
+        margin-top: 1.5rem;
+    }
+    .sect3 {
+        margin-bottom: 0rem;
+    }
+}

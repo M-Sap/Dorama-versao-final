@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/basics.css">
+    <link rel="stylesheet" href="../styles/entrar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img height="20" src="../assets/svg/DoramaDB.svg" alt="doramaDB.svg">
+    </div>
+    <br>
+
+    <div class="geral">
+        <form action="http://localhost:5000/scripts/php/valida.php" method="get">
+            <h1>Entrar</h1>
+            <input type="text" name="nome" id="nome" placeholder="usuario">
+            <input type="password" name="senha" id="senha" placeholder="senha">
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div class="geral">
+        <form action="http://localhost:5000/scripts/php/delete.php" method="POST" classs="deletar">
+            <h1>Deletar Usuario</h1>
+            <input type="text" name="email" id="nome" placeholder="email">
+            <button type="submit">Deletar</button>
+        </form>
+    </div>
+
+    <div class="geral">
+        <form action="http://localhost:5000/scripts/php/alter.php" method="POST" class="alterar">
+            <h1>Alterar Senhas</h1>
+            <input type="text" name="email" id="nome" placeholder="email">
+            <input type="text" name="password" id="nome" placeholder="senha">
+            <button type="submit">Alterar</button>
+        </form>
+    </div>
+</body>
+
+</html>

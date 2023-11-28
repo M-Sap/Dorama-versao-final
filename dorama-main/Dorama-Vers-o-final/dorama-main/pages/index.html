@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/basics.css">
+    <link rel="stylesheet" href="../styles/indexstyle.css">
+
+    <title>Dorama</title>
+</head>
+<body>
+    <section class="sect1">
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <img height="20" src="../assets/svg/DoramaDB.svg" alt="doramaDB.svg">
+                </div>
+                <form action="http://localhost:5000/scripts/php/consultaDorama.php" method="get">
+                    <input type="text" class="searchbar" id="searchbar" name="searchbar" placeholder="Pesquisar">
+                    <button type="submit">Pesquisar</button>
+                </form>
+                <div class="login">
+                    <a href="./entrar.html" id="login-button">Perfil</a>
+                </div>
+            </nav>
+            <div class="headerimg"></div>
+        </header>
+        <div class="main">
+            <div class="recommendation-area">
+                <div class="recommendation-text">Recomendações</div>
+                <div class="videos-grid">
+                    <div class="lines">
+                        <div class="line line1">
+                            <div class="card" id="l1c1">
+                                <h2 class="dorama-name">Hotel Del Luna</h2>
+                                <div class="dorama-desc">Convidado para gerenciar um hotel para almas penadas, ele acaba conhecendo a antiga proprietária do lugar e seu mundo sobrenatural.</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card" id="l1c2">
+                                <h2 class="dorama-name">Hwarang</h2>
+                                <div class="dorama-desc">No período dos Três Reinos na Coreia, um grupo de jovens guerreiros discípulos das artes marciais e dos valores morais encontra amor e amizade em Silla.</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card" id="l1c3">
+                                <h2 class="dorama-name">Sweet Home</h2>
+                                <div class="dorama-desc">Quando humanos viram monstros selvagens e espalham o terror, um jovem atormentado e seus vizinhos lutam para sobreviver sem perder a humanidade.</div>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="line line2">
+                            <div class="card" id="l2c1">
+                                <h2 class="dorama-name">Paixão Imprevista</h2>
+                                <div class="dorama-desc">Uma jovem vai contra os desejos de sua família rica e se passa por uma estudante comum da universidade, onde cruza o caminho de um cantor pop.</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card" id="l2c2">
+                                <h2 class="dorama-name">Jardim de Meteoros</h2>
+                                <div class="dorama-desc">Dong Shancai entra na universidade dos seus sonhos determinada a se destacar. Lá, ela se depara com a panelinha dos alunos de elite e descobre o amor.</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card" id="l2c3">
+                                <h2 class="dorama-name">Love Alarm</h2>
+                                <div class="dorama-desc">Em um mundo em que um aplicativo avisa seus usuários se alguém por perto gosta deles, Kim Jojo descobre o amor e encara as adversidades da vida.</div>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+    
+                        <div class="line line3">
+                            <div class="card" id="l3c1">
+                                <h2 class="dorama-name">True beautiful</h2>
+                                <div class="dorama-desc">Lim Ju-gyeong se torna muito popular na escola depois que seu canal de maquiagem na internet vira um sucesso.</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card"
+                            id="l3c2">
+                                <h2 class="dorama-name">Tomorrow</h2>
+                                <div class="dorama-desc">Depois se tornar meio humano e meio espírito por acidente, um jovem entra para uma equipe de anjos da morte para realizar missões especiais.</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card"
+                            id="l3c3">
+                                <h2 class="dorama-name">Flower of Evil</h2>
+                                <div class="dorama-desc">Ele tem um passado complicado, mas mantém a pose de marido perfeito. Até que a esposa detetive começa a investigar uma série de assassinatos.</div>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <div class="line line4">
+                            <div class="card"
+                            id="l4c1">
+                                <h2 class="dorama-name">Minha Vênus</h2>
+                                <div class="dorama-desc">Abandonada pelo namorado de 15 anos por ganhar peso, uma advogada recebe ajuda de um personal trainer para entrar em forma e mudar sua vida.</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card"
+                            id="l4c2">
+                                <h2 class="dorama-name">Garota do Século 20</h2>
+                                <div class="dorama-desc">O ano é 1999 e uma adolescente começa a monitorar o garoto pelo qual a melhor amiga está apaixonada. Tudo vai bem até que um outro amor começa a dar as caras.!</div>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="card"
+                            id="l4c3">
+                                <h2 class="dorama-name">Well Intended Love</h2>
+                                <div class="dorama-desc">Para garantir a medula óssea que pode salvar sua vida, uma atriz faz um pacto com um jovem executivo, sem saber que amor e segredos podem atrapalhar os seus planos.</div>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect2">
+        <div class="block">
+            <form class="form" method="get" action="http://localhost:5000/scripts/php/cadastro.php">
+                <h2 id="signup">Cadastre-se!</h2>
+                <div class="inputs">
+                    <input class="input" type="text" id="nome" name="nome" placeholder="Nome" required>
+                    <input class="input" type="email" id="email" name="email" placeholder="Exemplo@gmail.com" required>
+                    <input class="input" type="password" id="senha" name="senha" placeholder="Senha" required>
+                    <button class="botao btn" type="submit"  onclick="verifica()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="sect3">
+        <p><strong>Produzido por:</strong> Maria Rita Teodoro e Thomas Henrique de Souza Santos</p>
+    </section>
+</body>
+</html>
